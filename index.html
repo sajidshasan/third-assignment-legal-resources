@@ -6,7 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Resource Assignment</title>
+    <!-- tailwind script -->
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        buttons: '#B68C5A',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- font-awesome kit -->
     <script src="https://kit.fontawesome.com/7e380862d5.js" crossorigin="anonymous"></script>
 
@@ -15,7 +30,7 @@
 </head>
 
 <body>
-    <header class="container mx-auto mt-12">
+    <header class="container mx-auto mt-12 ">
         <nav class="bg-white border-gray-200 dark:bg-gray-900 flex flex-row items-center justify-between">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4">
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><img
@@ -150,12 +165,104 @@
             </div>
         </nav>
 
-        <section class="container">
-            <div class="solutions">
+        <section class="container mt-12 mb-10">
+            <div class="flex  h-screen justify-center items-center flex-col">
+                <div
+                    class=" mx-auto my-auto bg-white img-fluid  container h-screen bg-[url('images/banner.png')] bg-cover bg-no-repeat bg-center  ">
+                    <div class="  flex flex-col justify-center items-center space-y-6 mx-20 mt-24 ">
+                        <h2 class="text-white text-7xl w-2/3 text-center font-extrabold">We Provide Effective Legal
+                            Solutions</h2>
+                        <p class="text-gray-100 w-2/3">
+                            Here to comfort, support and solve problems for you and your family in your time of need.
+                            Don't wait, get legal help for you and your family today. Contact Seton Family Lawyers. Get
+                            the help you need. Accredited Specialists. We handle complex cases.
+                        </p>
 
+                    </div>
+                    <div class=" mx-auto flex mt-6 justify-center items-center">
+                        <form class="flex flex-row items-center ">
+                            <label for="default-search"
+                                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                            <div class="">
+                                <div class="  flex items-center pl-3 pointer-events-none">
+
+                                </div>
+                                <input type="search" id="default-search"
+                                    class="block pe-80 py-5 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="Search Your Services" required>
+
+                            </div>
+                            <button type="submit"
+                                class=" ms-6 h-14 px-9 text-white  bg-buttons hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm text-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </section>
     </header>
+
+    <!-- main section -->
+    <main class="container mt-16">
+        <h2 class="text-center">The Legal Practice Area</h2>
+        <p class="text-center">
+            If there is an area of law you're particularly interested in, take a look at our various areas of law pages.
+            Areas of Law You Can Specialise in. Arbitration
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="border-b-2 border-slate-200 flex flex-col items-center">
+                <div>
+                    <img src="images/business.png" alt="">
+                </div>
+                <div class="">
+                    <h2>
+                        Business Law
+                    </h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/Frame.png" alt="">
+                </div>
+            </div>
+            <div class="border-b-2 border-slate-200 flex flex-col items-center">
+                <div>
+                    <img src="images/criminal.png" alt="">
+                </div>
+                <div class="">
+                    <h2>
+                        criminal Law
+                    </h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/Frame.png" alt="">
+                </div>
+            </div>
+            <div class="border-b-2 border-slate-200 flex flex-col items-center">
+                <div>
+                    <img src="images/business.png" alt="">
+                </div>
+                <div class="">
+                    <h2>
+                        Business Law
+                    </h2>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/Frame.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
